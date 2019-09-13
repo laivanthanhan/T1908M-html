@@ -1,0 +1,67 @@
+
+
+body{
+	background-color: #FFFFCC;
+}
+
+h2{
+	text-decoration: underline;
+	text-align: center;
+}
+
+#navigation{
+	position: relative;
+	margin-left: 25%;
+}
+
+#tablesectionOne{
+	table-layout: fixed;
+	text-align: center;
+	background-color:#FFFFDD;
+	position: relative;
+	padding-top: 9em;
+
+}
+
+#tablesectionTwo{
+	table-layout: fixed;
+	text-align: center;
+	background-color:#FFFFDD;
+	position: relative;
+	padding-top: 9em;
+}
+
+#tablesectionThree{
+	table-layout: fixed;
+	text-align: center;
+	background-color:#FFFFDD;
+	position: relative;
+	padding-top: 7em;
+
+}
+
+#tablesectionFour{
+	table-layout: fixed;
+	text-align: center;
+	background-color:#FFFFDD;
+	position: relative;
+	padding-top: 7em;
+
+}
+
+.CAPTION{
+	background-color: rgb(255,185,115);
+    font-family: arial;
+    font-size: 1em;
+    width: 320px;
+    text-align: center;
+}
+
+table > tr{
+	text-decoration: none;
+}
+
+table th, td{
+	border: solid #D0D0D0;
+	empty-cells: show;
+}
