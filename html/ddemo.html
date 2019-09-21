@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Học JS</title>
+</head>
+<body>
+	<h1>Nhập giá trị cần tính</h1>
+		<table>
+			<tr>
+				<td>
+					Nhập a:
+				</td>
+				<td >
+					<input type="text" name="a" id="A">
+				</td>
+			</tr>
+			<tr>
+				<td >
+					Nhập b:
+				</td>
+				<td>
+					<input type="text" name="b"  id="B">
+				</td>
+			</tr>
+			<tr>
+				<td>
+
+				</td>
+				<td >
+					<input type="submit" name="kq" id="button_cong" value="Cong">
+					<input type="submit" name="kqc" id="button_chia" value="Chia">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kết quả cong là:
+				</td>
+				<td>
+					<input type="text" name="kqk" id="kqcong">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Kết quả phep chia a/b là:
+				</td>
+				<td>
+					<input type="text" name="kqchia" id="kqchia">
+				</td>
+			</tr>
+		</table>
+<script>
+	function phep_cong(a, b) {
+	  return a + b;
+	}
+
+	function phep_chia(a, b){
+		return a/b;
+	}
+
+
+	document.getElementById("button_cong").onclick = function(){
+		var a = document.getElementById('A').value; //Lấy giá trị của input a
+		var b = document.getElementById('B').value; //Lấy giá trị của input b
+
+<<<<<<< HEAD
+		let tong = phep_cong(parseFloat(a), parseFloat(b)); //Gọi hàm phep_cong và truyền biến a, b
+		// let thuong = phep_chia(parseFloat(a), parseFloat(b));
+
+		document.getElementById("kqcong").value = tong;
+		// document.getElementById("kqchia").value = thuong;
+	};
+
+	document.getElementById("button_chia").onclick = function(){
+		var a = document.getElementById('A').value; //Lấy giá trị của input a
+		var b = document.getElementById('B').value; //Lấy giá trị của input b
+
+		let thuong = phep_chia(parseFloat(a), parseFloat(b)); //Gọi hàm phep_chia và truyền biến a, b
+
+		document.getElementById("kqchia").value = thuong;
+		let x = c;
+	};
+=======
+		let c = phep_cong(parseInt(a), parseInt(b)); //Gọi hàm phep_cong và truyền biến a, b
+		let an = phep_chia(parseInt(a), parseInt(b));
+
+		document.getElementById("kqcong").value = c;
+		document.getElementById("kqchia").value = an;
+	};
+
+	// document.getElementById("button_chia").onclick = function(){
+	// 	var a = document.getElementById('A').value; //Lấy giá trị của input a
+	// 	var b = document.getElementById('B').value; //Lấy giá trị của input b
+
+	// 	let c = phep_chia(parseInt(a), parseInt(b)); //Gọi hàm phep_chia và truyền biến a, b
+
+	// 	document.getElementById("kqchia").value = c;
+	// 	let x = c;
+	// };
+>>>>>>> 1db3069671a9b54bda4097c84d4751cdf93280b5
+</script>
+</body>
+</html>
