@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-		table{
-			border: 1px solid black;
-		}
-		tr td {
-			border : 1px solid blue;
-		}
-	</style>
-	<title>BT 268</title>
-	<script type="text/javascript">
-	function dulieu_sinhvien(so_sinhvien){
-		var danhsach_sv = [];
-		for(var i=0; i<so_sinhvien; i++){
-			var sinhvien_i = {
-				ten : "Thanh An",
-				tuoi : i + 18,
-				diachi : "Thanh Nhan-Hai Ba Trung",
-				email : "an.laivanthanh29@gmail.com",
-				dienthoai: "0975218867"
-			};
-			danhsach_sv.push(sinhvien_i);
-		}
-		return danhsach_sv;
-	}
-</script>
+  <title>Automobile Gellery-Page1</title>
 </head>
 <body>
-	<table id="thongtincua_sv">
-		<tr>
-			<td>STT</td>
-			<td>TEN</td>
-			<td>TUOI</td>
-			<td>DIA CHI</td>
-			<td>EMAIL</td>
-			<td>STD</td>
-		</tr>
-		<tr>
-			<script type="text/javascript">
-				var danhsach_sv = dulieu_sinhvien(20);
-				for(var i=0;i<20;i++){
-				  	var sinhvien_i = danhsach_sv[i];
-				  	document.write(`
-					  		<tr>
-					  			<td>${i+1}</td>
-					  			<td>${sinhvien_i.ten}</td>
-					  			<td>${sinhvien_i.tuoi}</td>
-					  			<td>${sinhvien_i.diachi}</td>
-					  			<td>${sinhvien_i.email}</td>
-					  			<td>${sinhvien_i.dienthoai}</td>
-					  		</tr>
-				  		`);
-				}
-			</script>
-		</tr>
-	</table>
+  <h2>Gallery Part I</h2>
+  <hr>
+  <a href="#1">
+    <h3>Chevrolet</h3> 
+  </a> 
+  <hr>
+
+  <a href="#2"> <h3>Ferrari</h3>
+  </a>
+  <hr>
+
+  <a href="#3"><h3>Ford</h3>
+  </a>
+  <hr>
+
+  <h3 id="1" style="font-weight: bolder;">Chevrolet</h3>
+  <p style="font-weight: bold;">Corvette Coupe</p>
+  <img src="../src/chevrolet.jpg">
+  <p style="font-weight: bold;">Camaro Rs/SS</p>
+  <img src="../src/camaro.jpg">
+
+  <p>
+    <a href="#4">Top</a>
+  </p>
+  <h3 id="2" style="font-weight: bolder;">Ferrari</h3>
+  <p style="font-weight: bold;">275 GTB</p>
+  <img src="../src/ferrari_275gtb.jpg">
+  <p style="font-weight: bold;">Dino_246_GTS</p>
+  <img src="../src/dino.jpg">
+
+  <p>
+    <a href="#4">Top</a>
+  </p>
+  <h3 id="3" style="font-weight: bolder;">Ford</h3>
+  <p style="font-weight: bold;">Tudor Hot Rod</p>
+  <img src="../src/tudor.jpg">
+  <p style="font-weight: bold;">Mustag Boss 302</p>
+  <img src="../src/mustag.jpg">
+
+  <p>
+    <a href="GallerayTow.html">Next page</a>
+  </p>
+  
 </body>
 </html>
