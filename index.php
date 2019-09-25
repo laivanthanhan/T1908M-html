@@ -1,51 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Automobile Gellery-Page1</title>
+  <style type="text/css">
+    body{
+      margin: 0px ;
+      color: blue;
+    }
+    .A{
+      margin-left: 30rem;   
+      margin-top: 10rem;
+      border: 1px solid blue;
+      width: 400px;
+      height: 30px;
+      text-align: center;
+      color: blue;
+      background-color: #34ebe8;
+    }
+
+    h2{
+      margin: 0;
+    }
+
+    .B{
+      margin-left: 30rem;   
+      border: 1px solid blue;
+        width: 400px;
+        margin-top: 1rem;
+        background-color: #34ebe8;
+    }
+
+    .C{
+    text-align: center;
+    }
+
+  </style>
+  <title>registration.html(BT244)</title>
 </head>
 <body>
-  <h2>Gallery Part I</h2>
-  <hr>
-  <a href="#1">
-    <h3>Chevrolet</h3> 
-  </a> 
-  <hr>
-
-  <a href="#2"> <h3>Ferrari</h3>
-  </a>
-  <hr>
-
-  <a href="#3"><h3>Ford</h3>
-  </a>
-  <hr>
-
-  <h3 id="1" style="font-weight: bolder;">Chevrolet</h3>
-  <p style="font-weight: bold;">Corvette Coupe</p>
-  <img src="../src/chevrolet.jpg">
-  <p style="font-weight: bold;">Camaro Rs/SS</p>
-  <img src="../src/camaro.jpg">
-
-  <p>
-    <a href="#4">Top</a>
-  </p>
-  <h3 id="2" style="font-weight: bolder;">Ferrari</h3>
-  <p style="font-weight: bold;">275 GTB</p>
-  <img src="../src/ferrari_275gtb.jpg">
-  <p style="font-weight: bold;">Dino_246_GTS</p>
-  <img src="../src/dino.jpg">
-
-  <p>
-    <a href="#4">Top</a>
-  </p>
-  <h3 id="3" style="font-weight: bolder;">Ford</h3>
-  <p style="font-weight: bold;">Tudor Hot Rod</p>
-  <img src="../src/tudor.jpg">
-  <p style="font-weight: bold;">Mustag Boss 302</p>
-  <img src="../src/mustag.jpg">
-
-  <p>
-    <a href="../GallerayTow.html">Next page</a>
-  </p>
   
+    <div class="A">
+      <h2>User Registration</h2>
+    </div>
+    <div class="B" >
+      <table>
+        <tr>
+          <td>
+            User ID:
+          </td>
+          <td>
+            <input type="text" name="id">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Password:
+          </td>
+          <td>
+            <input type="password" name="password">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Confirm Password:
+          </td>
+          <td>
+            <input type="password" name="confirm-password">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Existing E-mail ID:
+          </td>
+          <td>
+            <input type="text" name="emai">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Confirm Existing E-mail ID:
+          </td>
+          <td>
+            <input type="text" name="confirm-Emai">
+          </td>
+        </tr>
+        <tr>
+          <td>
+              
+          </td>
+          <td class="C">
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="submit" value="Reset">
+          </td>
+        </tr>
+      </table>
+    </div>
+  
+
 </body>
 </html>
