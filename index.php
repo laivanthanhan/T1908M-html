@@ -2,99 +2,59 @@
 <html>
 <head>
   <style type="text/css">
-    body{
-      margin: 0px ;
-      color: blue;
+    table{
+      border: 1px solid black;
     }
-    .A{
-      margin-left: 30rem;   
-      margin-top: 10rem;
-      border: 1px solid blue;
-      width: 400px;
-      height: 30px;
-      text-align: center;
-      color: blue;
-      background-color: #34ebe8;
+    tr td {
+      border : 1px solid blue;
     }
-
-    h2{
-      margin: 0;
-    }
-
-    .B{
-      margin-left: 30rem;   
-      border: 1px solid blue;
-        width: 400px;
-        margin-top: 1rem;
-        background-color: #34ebe8;
-    }
-
-    .C{
-    text-align: center;
-    }
-
   </style>
-  <title>registration.html(BT244)</title>
+  <title>BT 268</title>
+  <script type="text/javascript">
+  function dulieu_sinhvien(so_sinhvien){
+    var danhsach_sv = [];
+    for(var i=0; i<so_sinhvien; i++){
+      var sinhvien_i = {
+        ten : "Thanh An",
+        tuoi : i + 18,
+        diachi : "Thanh Nhan-Hai Ba Trung",
+        email : "an.laivanthanh29@gmail.com",
+        dienthoai: "0975218867"
+      };
+      danhsach_sv.push(sinhvien_i);
+    }
+    return danhsach_sv;
+  }
+</script>
 </head>
 <body>
-  
-    <div class="A">
-      <h2>User Registration</h2>
-    </div>
-    <div class="B" >
-      <table>
-        <tr>
-          <td>
-            User ID:
-          </td>
-          <td>
-            <input type="text" name="id">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Password:
-          </td>
-          <td>
-            <input type="password" name="password">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Confirm Password:
-          </td>
-          <td>
-            <input type="password" name="confirm-password">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Existing E-mail ID:
-          </td>
-          <td>
-            <input type="text" name="emai">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Confirm Existing E-mail ID:
-          </td>
-          <td>
-            <input type="text" name="confirm-Emai">
-          </td>
-        </tr>
-        <tr>
-          <td>
-              
-          </td>
-          <td class="C">
-            <input type="submit" name="submit" value="Submit">
-            <input type="reset" name="submit" value="Reset">
-          </td>
-        </tr>
-      </table>
-    </div>
-  
-
+  <table id="thongtincua_sv">
+    <tr>
+      <td>STT</td>
+      <td>TEN</td>
+      <td>TUOI</td>
+      <td>DIA CHI</td>
+      <td>EMAIL</td>
+      <td>STD</td>
+    </tr>
+    <tr>
+      <script type="text/javascript">
+        var danhsach_sv = dulieu_sinhvien(20);
+        for(var i=0;i<20;i++){
+            var sinhvien_i = danhsach_sv[i];
+            document.write(`
+                <tr>
+                  <td>${i+1}</td>
+                  <td>${sinhvien_i.ten}</td>
+                  <td>${sinhvien_i.tuoi}</td>
+                  <td>${sinhvien_i.diachi}</td>
+                  <td>${sinhvien_i.email}</td>
+                  <td>${sinhvien_i.dienthoai}</td>
+                </tr>
+              `);
+        }
+      </script>
+    </tr>
+  </table>
 </body>
 </html>
