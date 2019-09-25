@@ -44,7 +44,7 @@
   <img src="../src/mustag.jpg">
 
   <p>
-    <a href="GallerayTow.html">Next page</a>
+    <a href="../GallerayTow.html">Next page</a>
   </p>
   
 </body>
