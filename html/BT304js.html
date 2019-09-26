@@ -49,10 +49,14 @@
 	   		};
 
 	   		if(delta === 0){
-	   			alert("Phương trình có nghiệm kép");
-	   			x1= -b/(2*a);
-	   			x2= -b/(2*a);
-	   			
+	   			//alert("Phương trình có nghiệm kép");
+	   			if (a===0){
+	   				x1 = 'none';
+	   				x2 = 'none';
+	   			} else {
+	   				x1= -b/(2*a);
+	   				x2= -b/(2*a);
+	   			}	   			
 	   			ketqua.bien_x1 = x1;
 	   			ketqua.bien_x2 = x2;
 	   		}
@@ -61,9 +65,14 @@
 	   			alert("Phương trình vô nghiệm ");
 	   		}
 	   		else{
-	   			alert("Phuong trinh co 2 nghiem phan biet");
-	   			x1=(-y-Math.sqrt(delta))/(2*x);
- 				x2=(-y+Math.sqrt(delta))/(2*x);
+	   			//alert("Phuong trinh co 2 nghiem phan biet");
+	   			if (a===0){
+	   				x1 = 'none';
+	   				x2 = 'none';
+	   			} else{
+		   			x1=(-b-Math.sqrt(delta))/(2*a);
+	 				x2=(-b+Math.sqrt(delta))/(2*a);	
+	   			}
  				
  				ketqua.bien_x1 = x1;
 	   			ketqua.bien_x2 = x2;
@@ -84,7 +93,7 @@
 	   		ketquatu_function = bac_hai(parseFloat(a), parseFloat(b), parseFloat(c)); 
 
 	   		document.getElementById("kqx1").value = ketquatu_function.bien_x1;
-	   		document.getElementById("kqx2").value = ketqutau_function.bien_x2;
+	   		document.getElementById("kqx2").value = ketquatu_function.bien_x2;
 	   	}
 	   </script>
 </body>
