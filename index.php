@@ -52,6 +52,9 @@
 				<tr>
 					<td><a href="html/BT305js.html"> BT 305</a></td>
 				</tr>
+				<tr>
+					<td><a href="html/BT266.html"> BT 266</a></td>
+				</tr>
 			</table>
 		</div>		
 	</div>
