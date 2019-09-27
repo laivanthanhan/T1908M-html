@@ -13,10 +13,14 @@
 		}
 
 		tr a{
-			text-align: center;
-			font-family: justify;
 			font-size: 20px;
-			margin-left: -30px;
+		}
+
+		tr{
+			display: inline-block;
+		}
+		tr :hover{
+			background-color: White;
 		}
 
 		td {
@@ -28,10 +32,6 @@
 			color: red;
 
 		}
-		td :hover{
-			background-color: red;
-	
-		}
 	</style>
   <title></title>
 </head>
@@ -41,9 +41,15 @@
 		<div  class="ds_baitap">
 			<table>
 				<tr>
-					<td><a href="html/BT244.html"> BT 244</a></td>
+					<td><a href="html/BT244.html"> BT 244</a></td>					
+				</tr>
+				<tr>
 					<td><a href="html/BT259jgs.html"> BT 259</a></td>
+				</tr>
+				<tr>
 					<td><a href="html/BT304js.html"> BT 304</a></td>
+				</tr>
+				<tr>
 					<td><a href="html/BT305js.html"> BT 305</a></td>
 				</tr>
 			</table>
