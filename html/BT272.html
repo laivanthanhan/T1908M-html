@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		td, th{
+			border: 1px solid black;
+		}
+
+		div h3{
+			width: 100%;
+		}
+	</style>
+	<script type="text/javascript">
+		function tao_dulieu_sinhvien(so_sinhvien) {
+			var danhsach_sv = []; // Tao mang de return cho thang nao goi no
+			for (var i = 1; i <= so_sinhvien; i++){
+				var sinhvien_i = {
+					ten: "Thanh An" + i,
+					tuoi: i,
+					diachi: "Hai Ba Trung",
+					email: "an.laivanthanh@" + i,
+					dienthoai: "01234423000" + i
+				};
+				danhsach_sv.push(sinhvien_i);
+			}
+
+			return danhsach_sv;
+		}
+	</script>
+</head>
+<body>
+	<table id="thongtin_sv">
+		<div class="A">
+			<h3>Management Products</h3>
+		</div>
+		<div>
+			<tr>
+				<th>STT</th>
+				<th>Ten</th>
+				<th>Tuoi</th>
+				<th>Dia chi</th>
+				<th>Email</th>
+				<th>Dien thoai</th>
+			</tr>
+		</div>
+	
+	</table>
+<script type="text/javascript">
+	window.onload = function() {
+		var danhsach_sv = tao_dulieu_sinhvien(20);
+		var table = document.getElementById("thongtin_sv");
+		for(var i = 0; i< 20; i++){
+			var row = table.insertRow(i+1);// Tao 1 dong
+			var o_stt = row.insertCell(0); //Tu dong da tao, tao o chua thong tn
+			var ten_stt = row.insertCell(1);
+			var tuoi_stt = row.insertCell(2);
+			var diachi_stt = row.insertCell(3);
+			var email_stt = row.insertCell(4);
+			var dt_stt = row.insertCell(5);
+
+			// Hien thi du lieu tung o
+			var sinhvienthu_i = danhsach_sv[i];
+			o_stt.innerHTML = i + 1;
+			ten_stt.innerHTML = sinhvienthu_i.ten;
+			tuoi_stt.innerHTML = sinhvienthu_i.tuoi;
+			diachi_stt.innerHTML = sinhvienthu_i.diachi;
+			email_stt.innerHTML = sinhvienthu_i.email;
+			dt_stt.innerHTML = sinhvienthu_i.dienthoai;
+
+		}
+
+	};
+</script>
+</body>
+</html>
