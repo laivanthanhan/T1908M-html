@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3>In danh sach va tinh tong</h3>
+	<button onclick="nhapN()">Nhap N</button>
+	<button onclick="inds()">In ra danh sach</button>
+	<button onclick="tong()">Tinh tong</button>
+
+<script type="text/javascript">
+	var a = [];
+	var n, i, sum = 0;
+	function nhapN() {
+		n = prompt("Nhap N")
+	}
+
+	function inds(){
+		for ( i = 0; i < n; i++) {
+			a[i] =Math.floor(Math.random()*1000);
+			sum = sum+a[i];
+		}
+		alert(a);
+	}
+	function tong(){
+		alert(sum);
+	}	
+</script>
+</body>
+</html>
