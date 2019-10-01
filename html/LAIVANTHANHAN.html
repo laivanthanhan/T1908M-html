@@ -2,13 +2,25 @@
 <html>
 <head>
 	<style type="text/css">
+		html{
+			height: 100%;
+		}
+
 		body{
 			margin: 0px;
+			width: 100%;
+			height: 100%;
 		}
 		
 		header{
 			width: 100%;
 			height: 400px;
+		}
+
+		a img:hover{
+			width: 45px;
+			height: 45px;
+			border: 1px solid bisque;
 		}
 
 		.banner img{
@@ -47,26 +59,118 @@
 			float: right;
 		}
 
-		content{
-			min-height: 400px;
+		.content{
+			width: 100%;
+			min-height: 700px;
+			background-color: #d5e3e2;
+			display: flex;
+		}
 
+		.content div{
+			padding-right: 15px;
+		}
+
+		.content h3{
+			margin-left: 35px;
+			display: flex;
+			color: #f59425;
+		}
+
+		.content ul{
+				display: inline-block;
+/*			border: 1px solid black;*/
+		}
+
+		.content li{
+			border: 1px solid black;
+			font-size: 22px;
+			padding-left: 10px;
+			padding-right: 30px;
+			width: 100px;			
+			cursor: pointer;
+			list-style-type: none;
+			padding: 20px;
+			font-family: cursive;
+		}
+
+		.content a{
+			text-decoration: none;
+		}
+
+		.dien_bien{
+			border: 1px solid black;
+			background-color: #faf7f8;
+			width: 100%;
+			min-height: 400px;	
+
+		}
+
+		.dien_bien h3{
+			width: 65%;
+			height: 40px;
+			background-color: white; 
+			padding-top: 15px;
+   			padding-left: 35%;
+			margin-left: 10px;
+		}
+
+		embed{
+			width: 940px;
+	    	height: 700px;
+		}
+
+		#embed_music {
+			display: none;
+		}
+
+		#embed_music.active{
+			display: block;
+		}
+
+		#embed_zing{
+			display: none;
+		}
+
+		#embed_zing.active{
+			display: block;
+		}
+
+		#embed_tintuc{
+			display: none;
+		}
+
+		#embed_tintuc.active{
+			display: block;
+		}
+
+		#embed_banthan{
+			display: none;
+		}
+
+		#embed_banthan.active{
+			display: block;
+		}
+
+		#embed_hoctap{
+			display: none;
+		}
+
+		#embed_hoctap.hoatdong{
+			display: block;
 		}
 
 		footer{
-			background-color: #d9d9d9;
+			background-color: #86858a;
 			width: 100%;
 			min-height: 50px;
 			text-align: center;
+			margin-bottom: 0px;
 		}
 
-		footer p{
+		footer p {
 			padding-top: 1rem;
-		}
-
-		a img:hover{
-			width: 45px;
-			height: 45px;
-			border: 1px solid bisque;
+			margin: 0;
+			color: #F8F8F8;
 		}
 
 	</style>
@@ -75,18 +179,24 @@
 <body>
 	<header>
 		<div class="banner">
-			<img src="https://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/04-full.jpg">
-			
+			<img src="https://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/04-full.jpg">			
 		</div>
 	</header>
 		<nav >
 			<ul>
 				<li> 
-					<a href="Information.html"> <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/37719222_2165098620434358_1060764838013173760_n.jpg?_nc_cat=100&_nc_oc=AQl8qXPvJKjOtuI-NnF_kYe2agPgLb3ysVeB3IZOSgUJdtsJ-FUcMrd1TP_g1pnWBLw&_nc_ht=scontent.fhan2-4.fna&oh=e758b623ef9e175b90a76dda8de9d395&oe=5E391251"> </a>
+					<!-- <a href="Information.html"> -->
+					 <img id="banthan" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/37719222_2165098620434358_1060764838013173760_n.jpg?_nc_cat=100&_nc_oc=AQl8qXPvJKjOtuI-NnF_kYe2agPgLb3ysVeB3IZOSgUJdtsJ-FUcMrd1TP_g1pnWBLw&_nc_ht=scontent.fhan2-4.fna&oh=e758b623ef9e175b90a76dda8de9d395&oe=5E391251">
+					  <!-- </a> -->
 				</li>
 				<li> 
 					<a href="https://laivanthanhan.000webhostapp.com/"> 
-						<img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/47fcb9400000640005023f0b/0x0.png"> 
+						<img id="webhost" src="https://s3-eu-west-1.amazonaws.com/tpd/logos/47fcb9400000640005023f0b/0x0.png"> 
+					</a>
+				</li>
+				<li>
+					<a href="https://dashboard.heroku.com/apps/newfolder">
+						<img src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png">
 					</a>
 				</li>
 				<li> 
@@ -105,12 +215,169 @@
 				</li>
 			</ul>
 		</nav>
-		<content>
-			<img src="http://webcoban.vn/image/trollface.gif">
-		</content>
-	
+		<div class="content">
+			
+			<div>
+				<ul>
+				<!-- 	<li style="color: red" id="thu_gian">Thư giãn !!!</li> -->
+					<li style="background-color: #f5ef42;" class="hover" id="music">Music</li>
+					<li style="background-color: #f22707;" class="hover" id="zing">Zing TV</li>
+					<li style="background-color: #f28c07;" class="hover" id="tin_tuc" >News</li>
+					<li style="background-color: #07eef2;" class="hover" id="hoctap">Exercise</li>
+				</ul>
+			</div>
+
+			<div class="dien_bien">
+				<h3>Welcome to website AnLVT</h3>
+
+				<div id='embed_music'>
+					<embed src="https://mp3.zing.vn/">
+				</div>
+
+				<div id="embed_zing">
+					<embed src="https://zingtv.vn/">
+				</div>
+
+				<div id="embed_tintuc">
+					<embed src="https://dantri.com.vn/">
+				</div>
+
+				<div id="embed_banthan">
+					<embed src="Information.html">
+				</div>
+
+				<div id="embed_hoctap">
+					<embed src="https://learning.gokisoft.com/admin/shared_index.php">
+				</div>
+			</div>
+
+			<div>
+				<img src="http://webcoban.vn/image/trollface.gif">
+			</div>
+						
+		</div>	
+
 	<footer>
 		<p>© Copyright for Dev by AnLVT</p>
 	</footer>
+<script type="text/javascript">
+	document.getElementById('music').onclick = function() {
+		var embed_music = document.getElementById('embed_music');
+		
+		embed_music.classList.toggle("active");
+
+		if (embed_zing.classList.contains("active")){
+			embed_zing.classList.toggle("active");
+		}
+
+		if (embed_tintuc.classList.contains("active")){
+			embed_tintuc.classList.toggle("active");
+		}	
+
+		if(embed_banthan.classList.contains("active")){
+			embed_banthan.classList.toggle("active")
+		}
+
+		if(embed_banthan.classList.contains("active")){
+			embed_banthan.classList.toggle("active")
+		}
+
+		if(embed_hoctap.classList.contains('hoatdong')){
+			embed_hoctap.classList.toggle('hoatdong')
+		}
+
+	};
+
+	document.getElementById("zing").onclick = function() {
+		var embed_zing = document.getElementById("embed_zing");
+		
+		embed_zing.classList.toggle("active");
+
+		if (embed_music.classList.contains("active")){
+			embed_music.classList.toggle("active");
+		}
+
+		if (embed_tintuc.classList.contains("active")){
+			embed_tintuc.classList.toggle("active");
+		}
+
+		if(embed_banthan.classList.contains("active")){
+			embed_banthan.classList.toggle("active")
+		}
+
+		if(embed_hoctap.classList.contains('hoatdong')){
+			embed_hoctap.classList.toggle('hoatdong')
+		}
+	};
+
+	document.getElementById("tin_tuc").onclick = function(){
+		var embed_tintuc = document.getElementById("embed_tintuc");
+
+		embed_tintuc.classList.toggle("active");
+
+		if (embed_zing.classList.contains("active")){
+			embed_zing.classList.toggle("active");
+		}
+
+		if (embed_music.classList.contains("active")){
+			embed_music.classList.toggle("active");
+		}
+
+		if(embed_banthan.classList.contains("active")){
+			embed_banthan.classList.toggle("active")
+		}
+
+		if(embed_hoctap.classList.contains('hoatdong')){
+			embed_hoctap.classList.toggle('hoatdong')
+		}
+
+	};
+
+	document.getElementById("banthan").onclick = function(){
+		var embed_banthan = document.getElementById("embed_banthan");
+
+		embed_banthan.classList.toggle("active");
+
+		if(embed_music.classList.contains("active")){
+			embed_music.classList.toggle("active")
+		}
+
+		if (embed_zing.classList.contains("active")){
+			embed_zing.classList.toggle("active");
+		}
+
+		if (embed_tintuc.classList.contains("active")){
+			embed_tintuc.classList.toggle("active");
+		}
+
+		if(embed_hoctap.classList.contains('hoatdong')){
+			embed_hoctap.classList.toggle('hoatdong')
+		}
+	}
+
+	document.getElementById("hoctap").onclick = function(){
+		embed_hoctap = document.getElementById("embed_hoctap");
+
+		embed_hoctap.classList.toggle("hoatdong");
+
+		if(embed_music.classList.contains("active")){
+			embed_music.classList.toggle("active")
+		}
+
+		if (embed_zing.classList.contains("active")){
+			embed_zing.classList.toggle("active");
+		}
+
+		if (embed_tintuc.classList.contains("active")){
+			embed_tintuc.classList.toggle("active");
+		}
+
+		if(embed_banthan.classList.contains("active")){
+			embed_banthan.classList.toggle("active")
+		}
+
+	}
+
+</script>
 </body>
 </html>	
