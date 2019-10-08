@@ -1,0 +1,272 @@
+
+body{
+	margin: 0px;
+	background-color: #0a0a0a;
+	width: 100%;
+	height: 100%;
+
+}
+
+.banner img{
+	width: 100%;
+	height: 450px;
+}
+
+.sub_menu1{
+	width: 100%;
+	height: 50px;
+	background-color: red;
+	margin-top: -15px;
+
+}
+
+.sub_menu1 ul li.parent_menu{
+	list-style-type: none;
+	float: left;
+	font-family: cursive;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-top: 5px;
+	text-transform: capitalize;
+	margin-top: 5px;
+	margin-left: 70px;
+	height: 20px;
+	color: white;
+	width: 110px;
+	position: relative;
+}
+
+.sub_menu1  ul .parent_menu a {
+	text-decoration: none;
+	color: white;
+}
+
+.sub_menu1 ul li.parent_menu:hover {
+	background-color: #800000;
+	width: 110px;
+	height: 35px;
+}
+
+.sub_menu1 img{
+	width: 35px;
+	height: 35px;
+}
+
+.sub-menu li {
+  display: none;
+  width: 60px;
+  height: 30px;
+}
+
+.body img {
+	width: 200px;
+	height: 200px;
+	margin-left: 130px;
+}
+
+#so_1 a{
+	color: white;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+
+#so_1 {
+	width: 830px;
+	height: 195px;
+	margin-left: 130px;	
+	text-align: justify;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+#so_1 p{
+	margin-left: 257px;
+    padding-left: 100px
+}
+
+.anh {
+	width: 230px;
+	height: 200px;
+	float: left;
+}
+
+.main_thongtin {
+	width: 900px; 
+	padding-top: 20px;
+	margin-left: 380px;
+}
+
+.main_thongtin a{
+	color: Orange;
+	text-decoration: none; 
+}
+
+.p_thongtin {
+	 margin-left: 380px; 
+	 width: 800px; 
+	 height: 60px; 
+	 color: white; 
+	 padding-top: 90px; 
+	 text-decoration: none;
+	 color: white;
+}
+
+.p{
+	margin-left: 35px;
+	width: 398px;
+	height: 35px;
+	background-color: chocolate;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+/*--------------Ảnh thành viên----------------*/
+.anh_truyna{
+	float: left;
+	height: 570px;
+}
+
+.anh_truyna img{
+	width: 400px; 
+	height: 500px; 
+	padding-left: 35px; 
+	padding-top: 30px;
+}
+
+.footer_thanhvien {
+	width: 100%;
+    height: 50px;
+    background-color: #86858a;
+}
+
+.footer_thanhvien p{
+	margin-top: 110rem;
+	color: white;
+	padding-top: 15px;
+	text-align: center;
+}
+
+/*-------------dropdow------------------*/
+#thanhvien:hover #thuyenvien{
+	display: block;
+}
+
+
+.dropdow_content {
+    display: none;
+    position: absolute;
+    background-color: #cc0000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 8px;
+    
+}
+
+.dropdow_content li {
+    color: white;
+    margin-left: -35px;
+    text-decoration: none;
+    display: block;
+    padding: 6px 6px;
+}
+
+.dropdow_content li a{
+	color: black;
+}
+
+.dropdow_content li:hover {
+	background-color: #800000;
+	color: black;
+}
+
+.show {display:block;}
+/*---------------------------------*/
+
+
+.gioithieu p{
+	padding-bottom: 30px;
+	width: 80%;
+	color: white;
+	margin-left: 115px;
+	text-align: justify;
+}
+.gioithieu img{
+	margin-left: 25rem;
+}
+
+.gioithieu h1{
+	color: orange; 
+	margin-left: 100px;
+}
+
+.gioithieu .h2{
+	color: white; 
+	margin-left: 100px;
+}
+
+.gioithieu_sukien img{
+	margin-left: 15rem;
+}
+
+.gioithieu_sukien p{
+	padding-bottom: 30px;
+	width: 80%;
+	color: white;
+	margin-left: 115px;
+	text-align: justify;
+}
+/*---------------------------------*/
+.footer{
+		background-color: #86858a;
+		width: 100%;
+		min-height: 50px;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+.footer p {
+		padding-top: 1rem;
+		margin: 0;
+		color: #F8F8F8;
+		height: 30px;
+	}
+
+#thongtin_chitiet{
+  position: fixed;
+  display: none;
+  width: 110%;
+  height: 700px;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#thongtin_chitiet img{
+	width: 600px;
+    height: 580px;
+    padding-left: 380px;
+    margin-top: 50px;
+}
+
+/*-------------------Video-------------------*/
+
+.video {
+	width: 560px;
+	height: 500px;
+	float: left;
+	margin-left: 50px;
+}
+.video_2 {
+	width: 560px;
+	height: 500px;
+	margin-left: 50px;
+}
+.video h2{
+	width: 500px;
+	color: white;
+
+}

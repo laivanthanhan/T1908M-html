@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/onepiece.css">
+	</style>
+	<title>Thanh Vien</title>
+</head>
+<body class="body_thanhvien">
+	<div id="thongtin_chitiet" onclick="off()">
+		<img src="">
+	</div>
+	<div class="header">
+		<div class="banner">
+			<img src="../src/banner_thanhvien_onepiece.jpg">
+		</div>	
+	</div>
+	<div class="menu">
+		<div class="sub_menu1">
+			<ul>
+				<li class="parent_menu">					
+					<a href="../html/onepiece.html"><img src="../src/home.jpg"></a>
+				</li>
+				<li class="parent_menu">
+					<a href="../html/onepiece.html"> Trang Chủ </a>
+				</li>
+				<li class="parent_menu">
+					<a href="../html/sukien_onepiece.html"> Sự Kiện</a>
+				</li>
+				<li class="parent_menu">
+					<a href="../html/Video.html"> Video</a>
+				</li>
+				<li id="thanhvien" class="parent_menu">
+					<a href="../html/thanhvien_onepiece.html">Thành Viên</a>
+
+					<ul id="thuyenvien" class="dropdow_content">
+						<li><a href="../html/Thuyentruong.html">Thuyền Trưởng</a> </li>
+						<li><a href="../html/thuyenpho.html">Thuyền Phó</a></li>
+						<li><a href="../html/bobaquaivat.html">Bộ Ba Quái Vật</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="sub_menu2">
+		
+		</div>
+	</div>
+	<div id="danhsach_truyna">
+	</div>
+	<div class="footer_thanhvien">
+		<p>© Copyright for Dev by AnLVT</p>
+	</div>
+<script>
+	window.onload  = function() {
+		hienthi_anhtruyna();
+	}
+
+	function hienthi_anhtruyna(){
+		var anh_truyna = [
+			"https://i.pinimg.com/originals/b0/59/6a/b0596a57124c518a38ae57e874871a80.jpg",
+			"https://i.imacdn.com/ta/2016/09/18/6f3174c485afd18c_7744c1a4b5bfdf53_20193614741908131143215.jpg",
+			"https://genknews.genkcdn.vn/2018/9/26/anh-2-15379570475701112272520.jpg",
+			"https://i.imacdn.com/ta/2016/09/08/002b1ff6fe5d51d8_e423629cc6fbe48a_30803314733278343143215.jpg",
+			"https://i.imacdn.com/ta/2017/06/01/e268426b327021a1_e6c63ddcd89940fb_10680614963075966143215.jpg",
+			"https://genknews.genkcdn.vn/2018/9/26/anh-3-15379570475721896047836.jpg",
+			"https://i.imacdn.com/ta/2016/08/14/8df8e45a34f30874_eabc42234360a5d0_10134014711614921143215.jpg",
+			"https://genknews.genkcdn.vn/2018/4/30/6b9e57fea062562dd4cc693fa8aedeb3-15250677925171753433246.jpg",
+			"https://genknews.genkcdn.vn/2018/9/26/anh-1-15379570475691715581895.jpg"
+		];
+
+		for (var i = 0; i<anh_truyna.length; i++){
+			var div_truyna = document.createElement("div");
+			div_truyna.classList.add("anh_truyna");
+
+			div_truyna.addEventListener("click", function(){
+    			on(event);
+			});
+
+			var img_truyna = document.createElement("img");
+			img_truyna.src = anh_truyna[i];
+
+			div_truyna.appendChild(img_truyna); // Dat img trong div
+
+			document.getElementById("danhsach_truyna").appendChild(div_truyna);
+		}
+	}
+
+	function on(event) {
+		var srcImage = event.target.src;
+		document.getElementById("thongtin_chitiet").getElementsByTagName("img")[0].src = srcImage;
+		document.getElementById("thongtin_chitiet").style.display = "block";
+	}
+
+	function off() {
+	  document.getElementById("thongtin_chitiet").style.display = "none";
+	}
+</script>
+</body>
+</html>

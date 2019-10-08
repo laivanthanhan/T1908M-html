@@ -70,6 +70,9 @@
 				<tr>
 					<td><a href="html/LAIVANTHANHAN.html"> My Website</a></td>
 				</tr>
+				<tr>
+					<td><a href="html/onepiece.html"> One Piece</a></td>
+				</tr>
 			</table>
 		</div>		
 	</div>
